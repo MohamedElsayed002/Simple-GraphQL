@@ -16,13 +16,6 @@ app.use('/graphql', graphqlHTTP({
     graphiql: true
 }))
 
-mongoose.connect('mongodb+srv://mohamedelsayed20258:01093588197@cluster0.fmxethk.mongodb.net/NodeTypescript')
-    .then(() => {
-        app.listen(3000 , () => {
-            console.log('Server is running')
-        })
-    })
-    .catch((error) => {
-        console.log(error)
-    })
-
+app.listen(3000, () => {
+    console.log('server running')
+})
